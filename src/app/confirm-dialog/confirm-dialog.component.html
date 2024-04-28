@@ -1,0 +1,12 @@
+<!-- but=> ne pas mettre du texte dans HTML mais lire le contenu des var dans le TS -->
+
+
+<!-- {{title}}=> var fel ts bech nejm nbdel contenu -->
+<h2 mat-dialog-title>{{title}}</h2>
+<mat-dialog-content>{{content}}</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>{{cancel}}</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button [mat-dialog-close]="true">{{actions}}</button>
+  <!-- [mat-dialog-close]="true"=> boite envoie true vers le composant original -->
+</mat-dialog-actions>

@@ -1,29 +1,133 @@
 {
-    "members": [
-      {
-        "id": "123456",
-        "cin": "293899",
-        "name": "Emna",
-        "cv": "lien",
-        "type": "etudiante",
-        "createdDate": "29/01/2024"
-      },
-      {
-        "id": "123390",
-        "cin": "293866",
-        "name": "Ilyes",
-        "cv": "lien",
-        "type": "etudiant",
-        "createdDate": "02/01/2024"
-      },
-      {
-        "id": "123123",
-        "cin": "293833",
-        "name": "Omar",
-        "cv": "lien",
-        "type": "etudiant",
-        "createdDate": "09/01/2024"
-      }
-    ]
-  }
-  
+  "members": [
+    {
+      "id": "123456",
+      "cin": "293899",
+      "name": "Emna",
+      "cv": "lien",
+      "type": "etudiante",
+      "createdDate": "29/01/2024"
+    },
+    {
+      "id": "123390",
+      "cin": "293866",
+      "name": "Ilyes",
+      "cv": "lien",
+      "type": "etudiant",
+      "createdDate": "02/01/2024"
+    },
+    {
+      "id": "123123",
+      "cin": "293833",
+      "name": "Omar",
+      "cv": "lien",
+      "type": "etudiant",
+      "createdDate": "09/01/2024"
+    }
+  ],
+  "articles": [
+    {
+      "type": "Scientifique",
+      "title": "lllllllllllllllllllllllllllllll",
+      "lien": "google.tn",
+      "date": "09/01/2025",
+      "sourcepdf": "google.com",
+      "id": "123001"
+    },
+    {
+      "id": "123000",
+      "type": "mathematique",
+      "title": "erp",
+      "lien": "google.tn",
+      "date": "09/01/2026",
+      "sourcepdf": "google.com"
+    },
+    {
+      "id": "123001",
+      "type": "Scientifique",
+      "title": "pattern",
+      "lien": "google.tn",
+      "date": "09/01/2025",
+      "sourcepdf": "google.com"
+    },
+    {
+      "id": "123000",
+      "type": "mathematique",
+      "title": "erp",
+      "lien": "google.tn",
+      "date": "09/01/2026",
+      "sourcepdf": "google.com"
+    },
+    {
+      "id": "3632",
+      "type": "math",
+      "titre": null,
+      "lien": "klklkl",
+      "date": "2024-04-16T23:00:00.000Z",
+      "sourcepdf": "klklkl"
+    },
+    {
+      "id": "8eeb",
+      "type": "geo",
+      "title": "titre",
+      "lien": "kkoo",
+      "date": "2024-04-16T23:00:00.000Z",
+      "sourcepdf": "ooolll"
+    },
+    {
+      "id": "eb4d",
+      "type": null,
+      "title": null,
+      "lien": null,
+      "date": "2024-04-24T23:00:00.000Z",
+      "sourcepdf": null
+    },
+    {
+      "id": "6c3e",
+      "type": "emna",
+      "title": "ab",
+      "lien": "kkkk",
+      "date": "2024-04-16T23:00:00.000Z",
+      "sourcepdf": "ooo"
+    },
+    {
+      "id": "82e0",
+      "type": "Scientifique",
+      "title": "patterne",
+      "lien": "pattern",
+      "date": "2024-04-17T23:00:00.000Z",
+      "sourcepdf": "google.com"
+    },
+    {
+      "id": "06b0",
+      "type": "Scientifiquee",
+      "title": "pattern",
+      "lien": "pattern",
+      "date": "09/01/2025",
+      "sourcepdf": "google.com"
+    }
+  ],
+  "evenement": [
+    {
+      "id": "2",
+      "titre": "Événement 2",
+      "dateDebut": "2024-05-10T10:00:00Z",
+      "dateFin": "2024-05-12T20:00:00Z",
+      "lieu": "Lieu de l'événement 2"
+    },
+    {
+      "id": "3",
+      "titre": "Nouvel événement",
+      "dateDebut": "2024-06-01T09:00:00Z",
+      "dateFin": "2024-06-01T18:00:00Z",
+      "lieu": "Nouveau lieu"
+    },
+    {
+      "id": "f003",
+      "titre": "evet3",
+      "lieu": "sfax",
+      "dateDebut": "2024-04-24T23:00:00.000Z",
+      "dateFin": "2024-04-25T23:00:00.000Z"
+    }
+  ]
+}

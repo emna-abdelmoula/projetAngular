@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="onsubmit()">
+    <!-- lorsque je clique sur submit , on recupere fel ts. -->
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>cin</mat-label>
+            <input matInput placeholder="cin" formControlName="cin">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>name</mat-label>
+            <input matInput placeholder="name" formControlName="name">
+
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>cv</mat-label>
+            <input matInput placeholder="cv" formControlName="cv">
+
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>type</mat-label>
+            <input matInput placeholder="type" formControlName="type">
+
+        </mat-form-field>
+    </p>
+    <button type="submit">save</button>
+    
+</form>
