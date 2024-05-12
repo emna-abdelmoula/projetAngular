@@ -2,15 +2,27 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MemberFormComponent } from './member-form/member-form.component';
 import { MemberComponent } from './member/member.component';
-import { DashboradComponent } from './dashborad/dashborad.component';
+
 import { ArticlesComponent } from './articles/articles.component';
 import { EventsComponent } from './events/events.component';
 import { ToolsComponent } from './tools/tools.component';
 import { LoginComponent } from './login/login.component';
 import { ArticleformComponent } from './articleform/articleform.component';
+import { DashboardComponent } from './dashborad/dashborad.component';
 
 
 const routes: Routes = [//tableau qui va contenir les routes 
+{
+  path:'events',
+  pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur ,
+
+  component:EventsComponent,
+},
+{
+  path:'articles',
+  pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
+  component:ArticlesComponent,
+},
 {
   path:'create', //quand on a ce path 
   pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
@@ -38,23 +50,15 @@ const routes: Routes = [//tableau qui va contenir les routes
 {
   path:'dashborad',
   pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
-  component:DashboradComponent,
+  component:DashboardComponent,
 },
-{
-  path:'articles',
-  pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
-  component:ArticlesComponent,
-},
+
 {
   path:':id/edit/article',
   pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
   component:ArticleformComponent,
 },
-{
-  path:'events',
-  pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 
-  component:EventsComponent,
-},
+
 {
   path:'tools',
   pathMatch:'full',//ken maktebtch kima houa fel path belthabt erreur 

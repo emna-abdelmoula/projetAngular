@@ -1,1 +1,85 @@
-<p>dashborad works!</p>
+
+<div fxLayout="row" fxLayoutAlign="space-evenly center" >
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Members</mat-card-title>
+      <br>
+      <mat-card-content>{{Nb_Members}}</mat-card-content>
+    </mat-card-header>
+
+    <mat-card-actions>
+ 
+      </mat-card-actions>
+     
+  </mat-card>
+ 
+<br>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Articles</mat-card-title>
+      <mat-card-content>{{Nb_Articles}}</mat-card-content>
+    </mat-card-header>
+    <mat-card-actions>
+ 
+    </mat-card-actions>
+  </mat-card>
+  <br>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Events</mat-card-title>
+      <mat-card-content>{{Nb_Events}}</mat-card-content>
+    </mat-card-header>
+    <mat-card-actions>
+ 
+    </mat-card-actions>
+  </mat-card>
+  <br>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Tools</mat-card-title>
+      <mat-card-content>{{Nb_Tools}}</mat-card-content>
+    </mat-card-header>
+    <mat-card-actions>
+ 
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="chart-wrapper">
+    <canvas baseChart
+            [type]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+         >
+    </canvas>
+  </div>
+  
+  <div class="chart-wrapper">
+    <canvas baseChart
+            [type]="'pie'"
+            [datasets]="chartData2"
+            [labels]="chartLabels2"
+            [options]="chartOptions"
+         >
+    </canvas>
+  </div>
+
+  <div class="chart-wrapper">
+    <canvas baseChart
+            [type]="'bar'"
+            [datasets]="chartData3"
+            [labels]="chartLabels3"
+            [options]="chartOptions"
+         >
+    </canvas>
+  </div>
+  <style>
+     .chart-wrapper canvas {
+    max-width: 300px;
+    max-height: 200px;
+    width: 500px;
+    height: auto;
+  }
+  </style>
+ 

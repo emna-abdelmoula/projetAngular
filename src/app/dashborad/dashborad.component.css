@@ -1,0 +1,58 @@
+.gold-card {
+    background-color: #FFD700;
+}
+
+.green-card {
+    background-color: #90EE90;
+}
+
+.blue-card {
+    background-color: #ADD8E6;
+}
+.chart-wrapper canvas {
+    width: 400px !important;  /* Largeur fixe */
+    height: 300px !important; /* Hauteur fixe */
+}
+.charts-container {
+    display: flex;
+    flex-direction: row; /* Aligner horizontalement */
+    justify-content: space-around; /* Espacer uniformément les éléments */
+    align-items: center; /* Centrer les éléments verticalement */
+  }
+  
+  .chart-wrapper {
+    flex: 1; /* Ajustez cette valeur selon le besoin de taille */
+    padding: 10px; /* Espacement entre les graphiques */
+  }
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh; /* Utilisez toute la hauteur de la vue */
+  }
+  
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .info-card {
+    flex: 1; /* Distribue l'espace équitablement */
+    margin: 10px; /* Espacement entre les cartes */
+  }
+  
+  .charts-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .chart-wrapper {
+    flex: 1; /* Distribue l'espace équitablement */
+    max-width: 600px; /* Maximum pour éviter des graphiques trop grands */
+    padding: 5px; /* Espacement autour des graphiques */
+  }
+  

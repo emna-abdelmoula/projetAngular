@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Member } from 'src/Modeles/Member';
 import { GLOBAL } from 'src/app/app-config';
 
 @Injectable({//on peut l'injecter dans n'importe quel composant(mech n3ytlou b3ed fel fnct)
@@ -27,6 +28,9 @@ export class Member1Service {
     this.tab.push(Member1);//push=> ajouter un elet dans un tab 
         return  new Observable(observer=> {observer.next()})//next()=> topic
         //observer.next() => si pas d'erreur  on appelle next()
+}
+GETALL():Observable<Member[]>{
+  return this.httpClient.get<Member[]>('http://localhost:3000/members')
 }
   onDelete(id:string):Observable<any>
   {

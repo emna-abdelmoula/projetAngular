@@ -20,7 +20,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
-import { DashboradComponent } from './dashborad/dashborad.component';
+import { DashboardComponent } from './dashborad/dashborad.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { EventsComponent } from './events/events.component';
@@ -34,8 +34,7 @@ import { ArticleformComponent } from './articleform/articleform.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { EvetformComponent } from './evetform/evetform.component';
-
-
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,13 +42,14 @@ import { EvetformComponent } from './evetform/evetform.component';
     MemberFormComponent,
     ConfirmDialogComponent,
     LayoutComponent,
-    DashboradComponent,
+    
     ToolsComponent,
     ArticlesComponent,
     EventsComponent,
     LoginComponent,
     ArticleformComponent,
     EvetformComponent,
+    DashboardComponent
 
   ],
   imports: [
@@ -78,7 +78,8 @@ import { EvetformComponent } from './evetform/evetform.component';
     MatInputModule,
     MatFormFieldModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
